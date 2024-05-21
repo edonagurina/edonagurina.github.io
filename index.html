@@ -1,60 +1,97 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Edona Gurina's CISC 3610 Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			body {
-				background-color: navy;
-				color: white;
-				font-family: Arial, sans-serif;
-				text-align: center;
-			}
-			.container {
-				max-width: 800px;
-				margin: 0 auto;
-				padding: 20px;
-			}
-			.header {
-				margin-bottom: 20px;
-			}
-			.projects, .homework {
-				text-align: left;
-				margin-bottom: 40px;
-			}
-			.projects a, .homework a {
-				color: white;
-				text-decoration: none;
-			}
-			.projects a:hover, .homework a:hover {
-				text-decoration: underline;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="header">
-				<h1>Edona Gurina's CISC 3610 Portfolio</h1>
-				<p>Email: <a href="mailto:edonagurina@gmail.com">edonagurina@gmail.com</a></p>
-			</div>
-			<div class="projects">
-				<h2>Projects</h2>
-				<ul>
-					<li><a href="https://edonagurina.github.io/project1">Project 1</a></li>
-					<li><a href="https://edonagurina.github.io/project2">Project 2</a></li>
-					<!-- Add more projects as needed -->
-				</ul>
-			</div>
-			<div class="homework">
-				<h2>Homework</h2>
-				<ul>
-					<li><a href="https://edonagurina.github.io/homework1">Homework 1</a></li>
-					<li><a href="https://edonagurina.github.io/homework2">Homework 2</a></li>
-					<!-- Add more homework assignments as needed -->
-				</ul>
-			</div>
-		</div>
-	</body>
+<head>
+    <title>Edona Gurina's CISC 3610 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <style>
+        body {
+            background-color: #0d1b2a; /* Dark navy blue almost black */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex; /* Use flexbox to align items horizontally */
+            justify-content: space-between; /* Evenly space items */
+            flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+        }
+
+        .header {
+            width: 100%; /* Take full width */
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            color: white; /* Email color */
+            margin-top: 10px; /* Adjust top margin */
+        }
+
+        .section {
+            flex: 1; /* Each section takes up equal space */
+            background-color: rgba(0, 0, 0, 0.5); /* Dark background with transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Shadow */
+            margin: 0 10px 20px; /* Add some space between sections */
+            text-align: left; /* Align text to the left */
+        }
+
+        .section h2 {
+            margin-top: 0;
+            text-align: center; /* Center section titles */
+        }
+
+        .section ul {
+            padding: 0;
+            list-style-type: disc; /* Use bullet points */
+            margin-left: 20px; /* Add some indentation */
+            text-align: left; /* Align list items to the left */
+        }
+
+        .section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Edona Gurina's CISC 3610 Portfolio</h1>
+        <p>Email: <a href="mailto:edonagurina@gmail.com" style="color: white;">edonagurina@gmail.com</a></p>
+    </div>
+    <div class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://edonagurina.github.io/cartoon-project/">Cartoon</a></li>
+            <li><a href="#">Animation</a></li>
+            <li><a href="#">Form Project</a></li>
+            <li><a href="#">Video Animation</a></li>
+            <li><a href="#">Data Visualization</a></li>
+            <li><a href="#">Menu Layout</a></li>
+            <li><a href="#">PWA</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Homework</h2>
+        <ul>
+            <li><a href="#">JSON Fruit Lab</a></li>
+            <li><a href="#">Audio Lab</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Resume Lab</a></li>
+        </ul>
+    </div>
+</div>
+</body>
 </html>
